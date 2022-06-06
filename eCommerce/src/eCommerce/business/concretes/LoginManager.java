@@ -14,6 +14,7 @@ public class LoginManager implements LoginService {
 	
 	@Override
 	public void login(String email, String password) {
+		/*
 		for(Customer customer : this.customerDao.getAll()) {
 			if(customer.getEmail() == email || customer.getPassword() == password) {
 				System.out.println(customer.getFirstName() + " is succesfuly logined.");
@@ -22,6 +23,7 @@ public class LoginManager implements LoginService {
 				System.out.println("Your email or password is invalid.");
 			}
 		}
+		*/
 		
 	}
 
