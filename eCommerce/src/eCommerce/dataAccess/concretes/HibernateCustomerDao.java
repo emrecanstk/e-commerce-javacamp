@@ -1,21 +1,26 @@
 package eCommerce.dataAccess.concretes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import eCommerce.dataAccess.abstracts.CustomerDao;
 import eCommerce.entities.concretes.Customer;
 
 public class HibernateCustomerDao implements CustomerDao {
-
+	
+	List<Customer> customerList = new ArrayList<Customer>();
+	
 	@Override
 	public void add(Customer customer) {
-		// TODO Auto-generated method stub
+		System.out.println("added with hibernate: "+ customer.getFirstName());
+		this.customerList.add(customer);
 		
 	}
 
 	@Override
 	public void delete(Customer customer) {
-		// TODO Auto-generated method stub
+		System.out.println("deleted with hibernate: "+ customer.getFirstName());
+		this.customerList.remove(customer);
 		
 	}
 
