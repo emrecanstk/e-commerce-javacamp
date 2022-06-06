@@ -1,5 +1,7 @@
 package eCommerce.core.abstracts;
 
-public interface EmailService {
+import eCommerce.entities.concretes.Customer;
 
+public interface EmailService {
+	boolean validator(Customer customer);
 }
