@@ -1,7 +1,7 @@
 package eCommerce.core.concretes;
 
-import eCommerce.core.abstracts.EmailService;
+import eCommerce.core.abstracts.LoggerService;
 
-public class EmailLogger implements EmailService {
+public class EmailLogger implements LoggerService {
 
 }
